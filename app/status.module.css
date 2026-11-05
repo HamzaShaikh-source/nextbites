@@ -1,0 +1,53 @@
+.main {
+  max-width: 44rem;
+  margin: 4rem auto;
+  padding: 2rem clamp(1.5rem, 5vw, 3rem);
+  color: var(--ink);
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.main h1 {
+  margin: .5rem 0 1rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2rem, 7vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.main p { line-height: 1.6; }
+
+.action {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 1.1rem;
+  border: 0;
+  border-radius: 2px;
+  background: var(--accent);
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.action:hover { background: var(--ink); }
+.action:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+.skeleton {
+  width: min(100%, 20rem);
+  height: 2rem;
+  border-radius: 2px;
+  background: var(--rule);
+  animation: pulse 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse { to { opacity: .4; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; }
+}

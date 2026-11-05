@@ -1,0 +1,74 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.4rem 1.3rem 1.2rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--accent);
+  border-radius: 2px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--ink);
+  border-top-color: var(--accent);
+}
+
+.card:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.cuisine {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.description {
+  margin: 0;
+  flex: 1;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.meta {
+  display: flex;
+  gap: 1.75rem;
+  margin: 0.4rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px dashed var(--rule);
+}
+
+.meta dt {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.meta dd {
+  margin: 0.1rem 0 0;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+  .card:hover {
+    transform: none;
+  }
+}

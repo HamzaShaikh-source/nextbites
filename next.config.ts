@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: "export",
+  basePath: process.env.NODE_ENV === "production" ? "/nextbites" : "",
+  trailingSlash: true,
 };
 
 export default nextConfig;

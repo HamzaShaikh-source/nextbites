@@ -1,0 +1,58 @@
+.main {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 4vw, 3rem) 5rem;
+}
+
+.back {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.back:hover { text-decoration: underline; }
+
+.article {
+  margin-top: 2rem;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 5px solid var(--accent);
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.article h1 {
+  margin: .5rem 0 1rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.description {
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.facts {
+  display: flex;
+  gap: 3rem;
+  margin: 2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.facts dt {
+  color: var(--muted);
+  font-size: .75rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.facts dd { margin: .3rem 0 0; font-weight: 700; }
