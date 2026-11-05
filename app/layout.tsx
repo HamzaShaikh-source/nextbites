@@ -16,7 +16,7 @@ const display = Fraunces({
 
 export const metadata: Metadata = {
   title: "NextBites",
-  description: "A small, tasty recipe collection built with Next.js.",
+  description: "Explore six delicious recipes from around the world and find your next favorite meal.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
