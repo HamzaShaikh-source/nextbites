@@ -57,3 +57,7 @@ export const recipes: Recipe[] = [
     description: "Rich miso broth, springy noodles, soft egg and scallions.",
   },
 ];
+
+export function getRecipe(id: string): Recipe | undefined {
+  return recipes.find((recipe) => recipe.id === id);
+}

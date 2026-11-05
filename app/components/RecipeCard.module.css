@@ -16,6 +16,11 @@
   border-top-color: var(--accent);
 }
 
+.card:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .cuisine {
   margin: 0;
   font-size: 0.72rem;
